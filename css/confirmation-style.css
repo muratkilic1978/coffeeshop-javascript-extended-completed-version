@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url(../img/confirmation-background.jpg);
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    font-family: sans-serif;
+    color: #0e0e94;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: beige;
+    padding: 5%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+section p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    color: #000000;
+}
+
+

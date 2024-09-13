@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js-cart-stored-as-json-object.js" defer></script>
+
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Sally's Coffee Bar</h1>
+    </header>
+    <main>
+        <!-- Black Coffee Section -->
+        <section>
+            <h2>Black Coffee</h2>
+            <aside>
+                <input type="number" name="coffee" id="coffee" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="coffee-price">Price per unit:</label>
+                <input type="number" id="coffee-price" value="10" disabled>
+            </aside>
+            <aside>
+                <label for="coffee-total">Total price:</label>
+                <input type="number" id="coffee-total" value="0" disabled>
+            </aside>
+            <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+            <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+            <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+            <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+            <aside><button onclick="increaseQuantity('coffee', 5);">+5</button></aside>
+            <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+        </section>
+        <!-- Americano Section -->
+        <section>
+            <h2>Americano</h2>
+            <aside>
+                <input type="number" name="americano" id="americano" value="0" disabled>
+            </aside>
+            
+            <aside>
+                <label for="americano-price">Price per unit:</label>
+                <input type="number" id="americano-price" value="12" disabled>
+            </aside>
+            <aside>
+                <label for="americano-total">Total price:</label>
+                <input type="number" id="americano-total" value="0" disabled>
+            </aside>
+            <aside><button onclick="addToCart('americano');">Add to Cart</button></aside>
+            <aside><button onclick="removeFromCart('americano');">Remove from Cart</button></aside>
+            <aside><button onclick="increaseQuantity('americano', 2);">+2</button></aside>
+            <aside><button onclick="increaseQuantity('americano', 3);">+3</button></aside>
+            <aside><button onclick="increaseQuantity('americano', 5);">+5</button></aside>
+            <aside><button onclick="resetCart('americano');">Reset Cart</button></aside>
+        </section>
+        <!-- Espresso Section -->
+        <section>
+            <h2>Espresso</h2>
+            <aside>
+                <input type="number" name="espresso" id="espresso" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="espresso-price">Price per unit:</label>
+                <input type="number" id="espresso-price" value="15" disabled>
+            </aside>
+            <aside>
+                <label for="espresso-total">Total price:</label>
+                <input type="number" id="espresso-total" value="0" disabled>
+            </aside>
+            <aside><button onclick="addToCart('espresso');">Add to Cart</button></aside>
+            <aside><button onclick="removeFromCart('espresso');">Remove from Cart</button></aside>
+            <aside><button onclick="increaseQuantity('espresso', 2);">+2</button></aside>
+            <aside><button onclick="increaseQuantity('espresso', 3);">+3</button></aside>
+            <aside><button onclick="increaseQuantity('espresso', 5);">+5</button></aside>
+            <aside><button onclick="resetCart('espresso');">Reset Cart</button></aside>
+        </section>
+
+        <!-- Latte Section -->
+        <section>
+            <h2>Latte</h2>
+            <aside>
+                <input type="number" name="latte" id="latte" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="latte-price">Price per unit:</label>
+                <input type="number" id="latte-price" value="18" disabled>
+            </aside>
+            <aside>
+                <label for="latte-total">Total price:</label>
+                <input type="number" id="latte-total" value="0" disabled>
+            </aside>
+            <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
+            <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
+            <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
+            <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
+            <aside><button onclick="increaseQuantity('latte', 5);">+5</button></aside>
+            <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
+        </section>
+        
+        <section>
+            <h2>Checkout sum:</h2>
+                <aside>
+                    <label for="totalSumCart">Total:</label>
+                    <input type="number" name="totalSum" id="totalSum" value="0" disabled>
+                </aside>
+        </section>
+        <!-- Add this to index.html, near your shopping cart summary -->
+        <section>
+            <h2>Checkout</h2>
+            <aside>
+                <!-- Checkout button -->
+                <button id="checkoutButton">Go to Checkout</button>
+            </aside>
+        </section>
+
+    </main>
+</body>
+</html>
